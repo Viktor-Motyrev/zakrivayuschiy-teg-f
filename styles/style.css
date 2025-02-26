@@ -260,8 +260,8 @@
 
 .icon-floppy {
   z-index: 2;
-  width: 28px;
-  height: 28px;
+  width: 21px;
+  height: 21px;
   color: var(--text-color-button);
   mix-blend-mode: difference;
 }
@@ -376,7 +376,7 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  
+
 }
 
 .dialog-content {
@@ -390,10 +390,6 @@
   color: var(--icon-hover-color);
 }
 
-.icon-floppy {
-  width: 21px;
-  height: 21px;
-}
 
 .dialog__floppy {
   width: 39px;
