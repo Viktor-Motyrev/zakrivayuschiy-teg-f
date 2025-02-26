@@ -9,3 +9,34 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+@keyframes scaleHeart {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes flashSparks {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(4px);
+  }
+}

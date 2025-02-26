@@ -51,3 +51,18 @@ ol {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+button {
+  margin: 0;
+  border: none;
+  padding: 0;
+  outline: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+}
+
+figure {
+margin: 0;
+padding: 0;
+}
