@@ -344,7 +344,7 @@
 .dialog {
   position: fixed;
   inset: 0;
-  max-width: 353px;
+  min-width: 353px;
   min-height: 191px;
   border: 2px solid var(--accent-color);
   background: var(--main-background);
@@ -362,11 +362,12 @@
 
 .columns {
   display: grid;
-  grid-template-columns: min-content 1fr;
   align-items: center;
+  grid-template-columns: min-content 13.1em;
   gap: 20px;
-  padding: 15px 0px 0px 13px;
-}
+  padding: 15px 21px 0px 0px;
+  }
+
 
 
 .columns__text {
@@ -455,12 +456,8 @@
   }
 
   .dialog {
-    max-width: 341px;
+    min-width: 341px;
     min-height: 191px;
-  }
-
-  .dialog-content {
-    gap: 30px;
   }
 
   .dialog__floppy {
@@ -469,10 +466,8 @@
   }
 
   .columns {
-    display: grid;
     grid-template-columns: min-content 1fr;
-    gap: 20px;
-    padding: 15px 0px 0px 13px;
+    padding: 15px 0px 0px 23px;
   }
 
   .ok-button {
