@@ -17,7 +17,7 @@
 
 <body class="page">
   <header class="header header--width">
-    <div class="header__logo">&lt;/HTML&gt;</div>
+    <span class="header__logo">&lt;/HTML&gt;</span>
     <h1 class="header__title">закрывающий тег</h1>
   </header>
   <main class="main">
@@ -39,7 +39,7 @@
       </p>
       <div class="card">
         <button type="button" class="card__icon-button">
-          <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
+          <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg">
             <g class="heart">
               <path class="contour"
@@ -345,32 +345,25 @@
         </button>
       </div>
     </article>
-  </main>
-  <footer class="footer">
+    <div class="button_dialog">
     <button
         type="button"
         onclick="window['dialog-id'].showModal();"
         aria-controls="dialog-id"
         class="button floppy-button">
-      <svg style="display:none;"  width="21" height="21" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <symbol id="floppy">
-          <path fill="currentColor"  d="M.5.5h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm33-36v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm30 3v3h-3v-3zm-27 3v3h-3v-3zm0-3v3h-3v-3zm0 6v3h-3v-3zm21-3v3h-3v-3zm0-3v3h-3v-3zm0 6v3h-3v-3zm-6-3v3h-3v-3zm0-3v3h-3v-3zm0 6v3h-3v-3zm6 3v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm24 9v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm24 3v3h-3v-3zm-24 0v3h-3v-3zm24 3v3h-3v-3zm-24 0v3h-3v-3zm24 3v3h-3v-3zm-24 0v3h-3v-3zm0 3v3h-3v-3zm24 0v3h-3v-3zm3 3v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm33 3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3z"/></symbol></svg>
-        <svg viewBox="0 0 40 40" class="icon-floppy icon-floppy__mobile">
-          <use href="#floppy"></use>
+        <svg viewBox="0 0 21 21" class="icon-floppy icon-floppy__mobile ">
+          <use href="./svg/floppy.svg#floppy"></use>
         </svg>
-        <span class="button__text">Сохранить на память</span>
+        <p class="button__text">Сохранить на память</p>
       </button>
       <dialog class="dialog" id="dialog-id">
         <div class="dialog-content">
           <div class="columns">
-            <svg style="display:none;"  width="39" height="39" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <symbol id="floppy_mobile">
-                <path fill="currentColor"  d="M.5.5h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm33-36v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm30 3v3h-3v-3zm-27 3v3h-3v-3zm0-3v3h-3v-3zm0 6v3h-3v-3zm21-3v3h-3v-3zm0-3v3h-3v-3zm0 6v3h-3v-3zm-6-3v3h-3v-3zm0-3v3h-3v-3zm0 6v3h-3v-3zm6 3v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm24 9v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm24 3v3h-3v-3zm-24 0v3h-3v-3zm24 3v3h-3v-3zm-24 0v3h-3v-3zm24 3v3h-3v-3zm-24 0v3h-3v-3zm0 3v3h-3v-3zm24 0v3h-3v-3zm3 3v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm33 3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3z"/></symbol></svg>
-              <svg viewBox="0 0 40 40" class="dialog__floppy">
-                <use href="#floppy_mobile"></use>
-              </svg>
-            <span class="columns__text"
-              >Вставьте дискету, чтобы продолжить</span>
+            <svg viewBox="0 0 21 21" class="dialog__floppy">
+              <use href="./svg/floppy.svg#floppy"></use>
+            </svg>
+            <p class="columns__text"
+              >Вставьте дискету, чтобы продолжить</p>
           </div>
           <form method="dialog">
             <button class="button ok-button">
@@ -379,7 +372,6 @@
           </form>
         </div>
       </dialog>
-    </footer>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
