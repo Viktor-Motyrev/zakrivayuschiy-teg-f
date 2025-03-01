@@ -186,7 +186,7 @@
 .button {
   position: relative;
   border: 2px solid var(--accent-color);
-  transition: box-shadow var(--transition-time) ease-in-out;
+  transition: box-shadow 0.3s ease;
 }
 
 .button:focus {
@@ -196,9 +196,6 @@
 
 .button:focus-visible {
   box-shadow: 2px 2px 0 0 var(--accent-color);
-  transition: box-shadow 0.3s ease;
-  
-  
 }
 
 .button::before {
@@ -217,6 +214,7 @@
 
 .button:hover::before {
   transform: scaleX(1);
+  
 }
 
 .card__like-button {
@@ -353,6 +351,7 @@
   min-width: 353px;
   border: 2px solid var(--accent-color);
   background: var(--main-background);
+  padding-bottom: 30px;
 }
 
 .dialog[open] {
@@ -370,7 +369,7 @@
   align-items: center;
   grid-template-columns: min-content 13.1em;
   gap: 20px;
-  padding: 15px 21px 0px 0px;
+  padding: 10px 21px 0px 0px;
   }
 
 
@@ -489,10 +488,4 @@
   .columns__text {
     max-width: 90%;
   }
-
-  .button_dialog {
-    margin-block-start: 52px;
-
-  }
-
 }
